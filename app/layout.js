@@ -1,29 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"], weight: ["600", "700", "800"] });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 export const metadata = {
-  title: "LuxeElectro",
-  description:
-    "Bawa kemewahan ke dalam kehidupan sehari-hari dengan pilihan elektronik terbaik.",
-  author: "Sanzystore",
+  title: "LuxeElectro — Elektronik Premium untuk Hidup Mewah",
+  description: "LuxeElectro: bawa kemewahan ke dalam kehidupan sehari-hari dengan pilihan gadget & home appliance terbaik.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
