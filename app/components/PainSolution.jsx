@@ -50,7 +50,7 @@ const PainSolution = () => {
   return (
     <section 
       ref={ref}
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-purple-50"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-violet-spec/12"
       aria-labelledby="pain-solution-heading"
     >
       <div className="max-w-5xl mx-auto">
@@ -63,13 +63,13 @@ const PainSolution = () => {
         >
           <motion.h2 
             id="pain-solution-heading"
-            className="text-3xl sm:text-4xl font-bold text-purple-800 leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-violet-spec leading-tight"
             variants={itemVariants}
           >
             Masalah Umum & Solusinya
           </motion.h2>
           <motion.p 
-            className="mt-4 text-gray-600 text-base sm:text-lg max-w-2xl mx-auto"
+            className="mt-4 text-lume-dim text-base sm:text-lg max-w-2xl mx-auto"
             variants={itemVariants}
           >
             Pelanggan sering menghadapi kendala ini sebelum menemukan teknologi yang tepat. Kami hadir untuk mengatasinya.
@@ -85,12 +85,12 @@ const PainSolution = () => {
         >
           {/* Problems */}
           <motion.div
-            className="bg-white border-l-4 border-purple-300 p-6 rounded-xl shadow-xs"
+            className="bg-lume border-l-4 border-violet-spec/30 p-6 rounded-xl shadow-xs"
             variants={itemVariants}
           >
             <div className="flex items-center mb-4">
-              <ExclamationCircleIcon className="h-6 w-6 text-purple-500 mr-2" />
-              <h3 className="text-xl font-semibold text-purple-800">
+              <ExclamationCircleIcon className="h-6 w-6 text-violet-spec mr-2" />
+              <h3 className="text-xl font-semibold text-violet-spec">
                 Masalah yang Umum Terjadi
               </h3>
             </div>
@@ -98,10 +98,10 @@ const PainSolution = () => {
               {problems.map((problem, index) => (
                 <motion.li 
                   key={index}
-                  className="flex items-start text-gray-700"
+                  className="flex items-start text-slate-deep"
                   variants={itemVariants}
                 >
-                  <ExclamationCircleIcon className="h-5 w-5 text-purple-300 mt-0.5 mr-2 flex-shrink-0" />
+                  <ExclamationCircleIcon className="h-5 w-5 text-violet-spec mt-0.5 mr-2 flex-shrink-0" />
                   <span>{problem}</span>
                 </motion.li>
               ))}
@@ -110,12 +110,12 @@ const PainSolution = () => {
 
           {/* Solutions */}
           <motion.div
-            className="bg-white border-l-4 border-purple-400 p-6 rounded-xl shadow-xs"
+            className="bg-lume border-l-4 border-violet-spec/30 p-6 rounded-xl shadow-xs"
             variants={itemVariants}
           >
             <div className="flex items-center mb-4">
-              <CheckCircleIcon className="h-6 w-6 text-purple-600 mr-2" />
-              <h3 className="text-xl font-semibold text-purple-800">
+              <CheckCircleIcon className="h-6 w-6 text-violet-spec mr-2" />
+              <h3 className="text-xl font-semibold text-violet-spec">
                 Solusi yang Kami Tawarkan
               </h3>
             </div>
@@ -123,10 +123,10 @@ const PainSolution = () => {
               {solutions.map((solution, index) => (
                 <motion.li 
                   key={index}
-                  className="flex items-start text-gray-700"
+                  className="flex items-start text-slate-deep"
                   variants={itemVariants}
                 >
-                  <CheckCircleIcon className="h-5 w-5 text-purple-400 mt-0.5 mr-2 flex-shrink-0" />
+                  <CheckCircleIcon className="h-5 w-5 text-violet-spec mt-0.5 mr-2 flex-shrink-0" />
                   <span>{solution}</span>
                 </motion.li>
               ))}
@@ -143,7 +143,7 @@ const PainSolution = () => {
         >
           <a
             href="#produk"
-            className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            className="inline-block bg-violet-spec hover:bg-violet-spec text-lume px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-violet-spec focus:ring-offset-2"
             aria-label="Temukan Produk yang Tepat"
           >
             Temukan Produk yang Tepat

@@ -6,25 +6,25 @@ import { FaDesktop, FaMobileAlt, FaShieldAlt, FaStar } from "react-icons/fa";
 const features = [
   {
     id: 1,
-    icon: <FaDesktop className="h-10 w-10 text-amber-700" />,
+    icon: <FaDesktop className="h-10 w-10 text-violet-spec" />,
     title: "Desain Elegan & Modern",
     description: "Produk elektronik kami memiliki desain yang stylish dan futuristik, cocok untuk rumah dan kantor.",
   },
   {
     id: 2,
-    icon: <FaMobileAlt className="h-10 w-10 text-green-600" />,
+    icon: <FaMobileAlt className="h-10 w-10 text-violet-spec" />,
     title: "Kualitas Terbaik",
     description: "Menggunakan teknologi terkini dan material premium untuk ketahanan maksimal.",
   },
   {
     id: 3,
-    icon: <FaShieldAlt className="h-10 w-10 text-purple-600" />,
+    icon: <FaShieldAlt className="h-10 w-10 text-violet-spec" />,
     title: "Keamanan Terjamin",
     description: "Setiap produk telah melalui uji ketahanan dan memenuhi standar keamanan tertinggi.",
   },
   {
     id: 4,
-    icon: <FaStar className="h-10 w-10 text-yellow-500" />,
+    icon: <FaStar className="h-10 w-10 text-violet-spec" />,
     title: "Paling Dipercaya",
     description: "Dipercaya oleh konsumen di seluruh dunia dan menjadi pilihan utama di industri elektronik.",
   },
@@ -63,7 +63,7 @@ const ValueProposition = () => {
   return (
     <section 
       ref={ref}
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-lume"
       aria-labelledby="value-prop-heading"
     >
       <div className="max-w-5xl mx-auto">
@@ -76,13 +76,13 @@ const ValueProposition = () => {
         >
           <motion.h2
             id="value-prop-heading"
-            className="text-3xl sm:text-4xl font-bold text-purple-800 leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-violet-spec leading-tight"
             variants={itemVariants}
           >
             Mengapa Memilih Produk Kami?
           </motion.h2>
           <motion.p
-            className="mt-4 text-gray-600 text-base sm:text-lg"
+            className="mt-4 text-lume-dim text-base sm:text-lg"
             variants={itemVariants}
           >
             Kami tidak hanya menjual produk elektronik, tetapi juga pengalaman yang membawa inovasi ke ruang Anda.
@@ -99,17 +99,17 @@ const ValueProposition = () => {
           {features.map((feature) => (
             <motion.div
               key={feature.id}
-              className="bg-white p-5 rounded-lg shadow-sm border border-gray-100 text-center flex flex-col items-center hover:shadow-md transition-shadow duration-200"
+              className="bg-lume p-5 rounded-lg shadow-sm border border-slate-deep/12 text-center flex flex-col items-center hover:shadow-md transition-shadow duration-200"
               variants={itemVariants}
               whileHover={{ y: -5 }}
             >
               <div className="mb-3" aria-hidden="true">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-slate-deep">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 mt-2 text-sm sm:text-base">
+              <p className="text-lume-dim mt-2 text-sm sm:text-base">
                 {feature.description}
               </p>
             </motion.div>
@@ -126,7 +126,7 @@ const ValueProposition = () => {
         >
           <a
             href="#cta"
-            className="inline-block bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            className="inline-block bg-violet-spec hover:bg-violet-spec text-lume px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-violet-spec focus:ring-offset-2"
             aria-label="Lihat koleksi produk kami"
           >
             Lihat Koleksi Kami

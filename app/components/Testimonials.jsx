@@ -63,7 +63,7 @@ const Testimonials = () => {
   return (
     <section 
       ref={ref}
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-white"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-lume"
       aria-labelledby="testimonials-heading"
     >
       <div className="max-w-4xl mx-auto">
@@ -76,13 +76,13 @@ const Testimonials = () => {
         >
           <motion.h2
             id="testimonials-heading"
-            className="text-3xl sm:text-4xl font-bold text-purple-800 leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-violet-spec leading-tight"
             variants={itemVariants}
           >
             Apa Kata Mereka?
           </motion.h2>
           <motion.p
-            className="mt-4 text-gray-600 text-base sm:text-lg"
+            className="mt-4 text-lume-dim text-base sm:text-lg"
             variants={itemVariants}
           >
             Ribuan pelanggan telah merasakan manfaat luar biasa dari layanan kami.
@@ -116,25 +116,25 @@ const Testimonials = () => {
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id}>
-                <div className="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100 text-center flex flex-col items-center">
+                <div className="bg-lume p-6 sm:p-8 rounded-lg shadow-sm border border-slate-deep/12 text-center flex flex-col items-center">
                   <div className="relative w-20 h-20 sm:w-24 sm:h-24 mb-4">
                     <img
                       src={testimonial.image}
                       alt={`Foto ${testimonial.name}`}
-                      className="w-full h-full rounded-full object-cover border-2 border-amber-300"
+                      className="w-full h-full rounded-full object-cover border-2 border-violet-spec/30"
                       width={96}
                       height={96}
                       loading="lazy"
                     />
                   </div>
-                  <blockquote className="text-gray-700 italic text-base sm:text-lg max-w-2xl mx-auto">
+                  <blockquote className="text-slate-deep italic text-base sm:text-lg max-w-2xl mx-auto">
                     "{testimonial.quote}"
                   </blockquote>
                   <div className="mt-4">
-                    <h3 className="text-lg sm:text-xl font-semibold text-purple-800">
+                    <h3 className="text-lg sm:text-xl font-semibold text-violet-spec">
                       {testimonial.name}
                     </h3>
-                    <p className="text-gray-500 text-sm sm:text-base">
+                    <p className="text-lume-dim text-sm sm:text-base">
                       {testimonial.role}
                     </p>
                   </div>
@@ -154,7 +154,7 @@ const Testimonials = () => {
         >
           <a
             href="#cta"
-            className="inline-block bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            className="inline-block bg-violet-spec hover:bg-violet-spec text-lume px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-violet-spec focus:ring-offset-2"
             aria-label="Bergabung sekarang"
           >
             Bergabung Sekarang

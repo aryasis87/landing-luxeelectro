@@ -47,7 +47,7 @@ const FAQ = () => {
   return (
     <section 
       ref={ref} 
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-lume"
       aria-labelledby="faq-heading"
     >
       <div className="max-w-4xl mx-auto">
@@ -59,11 +59,11 @@ const FAQ = () => {
         >
           <h2 
             id="faq-heading" 
-            className="text-3xl sm:text-4xl font-bold text-purple-800 tracking-tight"
+            className="text-3xl sm:text-4xl font-bold text-violet-spec tracking-tight"
           >
             Pertanyaan Umum
           </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
+          <p className="mt-3 text-lume-dim max-w-2xl mx-auto text-base sm:text-lg">
             Jawaban untuk pertanyaan yang sering diajukan tentang produk kami.
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div 
               key={faq.id}
-              className="rounded-lg border border-gray-200 bg-white shadow-xs overflow-hidden transition-all hover:shadow-sm"
+              className="rounded-lg border border-slate-deep/12 bg-lume shadow-xs overflow-hidden transition-all hover:shadow-sm"
             >
               <button
                 onClick={() => toggleFAQ(index)}
@@ -85,13 +85,13 @@ const FAQ = () => {
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-${faq.id}`}
               >
-                <span className="font-medium text-gray-900 text-base sm:text-lg">
+                <span className="font-medium text-slate-deep text-base sm:text-lg">
                   {faq.question}
                 </span>
                 <motion.span
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
-                  className="text-purple-600 ml-4 flex-shrink-0"
+                  className="text-violet-spec ml-4 flex-shrink-0"
                 >
                   <FaChevronDown aria-hidden="true" />
                 </motion.span>
@@ -119,7 +119,7 @@ const FAQ = () => {
                     className="overflow-hidden"
                   >
                     <div className="px-5 pb-4">
-                      <p className="text-gray-700 text-base leading-relaxed">
+                      <p className="text-slate-deep text-base leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>

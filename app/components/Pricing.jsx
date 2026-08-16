@@ -69,19 +69,19 @@ const Pricing = () => {
   };
 
   const featureVariants = {
-    hidden: { opacity: 0, x: -10 },
-    visible: { opacity: 1, x: 0 }
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 }
   };
 
   return (
     <section
       ref={ref}
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-purple-50 relative overflow-hidden"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-violet-spec/12 relative overflow-hidden"
       aria-labelledby="pricing-heading"
     >
       {/* Background Pattern - Optimized */}
       <div 
-        className="absolute inset-0 bg-[url('/images/wood-pattern.webp')] opacity-10 pointer-events-none bg-repeat"
+        className="absolute inset-0 wood-texture opacity-10 pointer-events-none"
         aria-hidden="true"
       ></div>
 
@@ -95,13 +95,13 @@ const Pricing = () => {
         >
           <motion.h2
             id="pricing-heading"
-            className="text-3xl sm:text-4xl font-bold text-purple-800 leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-violet-spec leading-tight"
             variants={itemVariants}
           >
             Pilih Paket Desain Furnitur Anda
           </motion.h2>
           <motion.p
-            className="mt-4 text-gray-700 text-base sm:text-lg max-w-2xl mx-auto"
+            className="mt-4 text-slate-deep text-base sm:text-lg max-w-2xl mx-auto"
             variants={itemVariants}
           >
             Rancang ruang impian Anda dengan layanan desain furnitur eksklusif kami.
@@ -118,14 +118,14 @@ const Pricing = () => {
           {pricingPlans.map((plan) => (
             <motion.div
               key={plan.id}
-              className="relative p-6 sm:p-8 rounded-xl bg-white border border-amber-200 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
+              className="relative p-6 sm:p-8 rounded-xl bg-lume border border-violet-spec/30 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
               variants={itemVariants}
               whileHover={{ y: -5 }}
             >
               {/* Popular Badge */}
               {plan.popular && (
                 <motion.span
-                  className="absolute -top-3 left-1/2 transform -translate-x-1/2 px-3 py-1 text-xs font-bold bg-purple-600 text-white rounded-full whitespace-nowrap"
+                  className="absolute -top-3 left-1/2 transform -translate-x-1/2 px-3 py-1 text-xs font-bold bg-violet-spec text-lume rounded-full whitespace-nowrap"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={inView ? { opacity: 1, scale: 1 } : {}}
                   transition={{ delay: 0.3 }}
@@ -134,13 +134,13 @@ const Pricing = () => {
                 </motion.span>
               )}
 
-              <h3 className="text-xl font-semibold text-purple-800 text-center">
+              <h3 className="text-xl font-semibold text-violet-spec text-center">
                 {plan.name}
               </h3>
 
               {/* Price */}
               <motion.p
-                className="text-3xl font-bold mt-3 text-amber-800 text-center"
+                className="text-3xl font-bold mt-3 text-violet-spec text-center"
                 initial={{ opacity: 0 }}
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.2 }}
@@ -153,11 +153,11 @@ const Pricing = () => {
                 {plan.features.map((feature, i) => (
                   <motion.li
                     key={`${plan.id}-${i}`}
-                    className="flex items-start text-gray-700 text-sm sm:text-base"
+                    className="flex items-start text-slate-deep text-sm sm:text-base"
                     variants={featureVariants}
                     transition={{ delay: i * 0.05 + 0.2 }}
                   >
-                    <FaCouch className="text-amber-400 mt-0.5 mr-2 flex-shrink-0" />
+                    <FaCouch className="text-violet-spec mt-0.5 mr-2 flex-shrink-0" />
                     <span>{feature}</span>
                   </motion.li>
                 ))}
@@ -166,11 +166,11 @@ const Pricing = () => {
               {/* Button */}
               <motion.a
                 href="#checkout"
-                className={`mt-8 px-6 py-3 text-white font-medium rounded-lg ${
+                className={`mt-8 px-6 py-3 text-lume font-medium rounded-lg ${
                   plan.popular 
-                    ? 'bg-gradient-to-r from-purple-600 to-purple-700 shadow-md' 
-                    : 'bg-purple-500'
-                } hover:bg-purple-700 transition-colors duration-200 text-center`}
+                    ? 'bg-gradient-to-r from-violet-spec to-violet-spec shadow-md' 
+                    : 'bg-violet-spec'
+                } hover:bg-violet-spec transition-colors duration-200 text-center`}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label={`Pilih paket ${plan.name}`}

@@ -31,7 +31,7 @@ const VideoSalesLetter = () => {
   return (
     <section 
       ref={ref}
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-lume"
       aria-labelledby="video-heading"
     >
       <div className="max-w-4xl mx-auto">
@@ -44,12 +44,12 @@ const VideoSalesLetter = () => {
         >
           <motion.h2
             id="video-heading"
-            className="text-3xl sm:text-4xl font-bold text-purple-800 leading-tight"
+            className="text-3xl sm:text-4xl font-bold text-violet-spec leading-tight"
           >
             Tonton Video Ini dan Temukan Rahasia Produk Elektronik Eksklusif!
           </motion.h2>
           <motion.p
-            className="mt-4 text-gray-600 text-base sm:text-lg"
+            className="mt-4 text-lume-dim text-base sm:text-lg"
             transition={{ delay: 0.1 }}
           >
             Video ini akan mengungkapkan bagaimana Anda bisa memiliki produk elektronik premium yang meningkatkan kualitas hidup Anda.
@@ -58,7 +58,7 @@ const VideoSalesLetter = () => {
 
         {/* Video Container */}
         <motion.div
-          className="mt-8 relative rounded-lg overflow-hidden shadow-md aspect-video bg-gray-200"
+          className="mt-8 relative rounded-lg overflow-hidden shadow-md aspect-video bg-slate-deep-2"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
@@ -73,8 +73,8 @@ const VideoSalesLetter = () => {
                   onClick={() => setIsPlaying(true)}
                   aria-label="Play video"
                 >
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-violet-spec rounded-full flex items-center justify-center">
+                    <svg className="w-8 h-8 text-lume" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
                     </svg>
                   </div>
@@ -106,7 +106,7 @@ const VideoSalesLetter = () => {
         >
           <a
             href="#cta"
-            className="inline-block bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            className="inline-block bg-violet-spec hover:bg-violet-spec text-lume px-6 py-3 rounded-lg font-medium shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-violet-spec focus:ring-offset-2"
             aria-label="Dapatkan koleksi eksklusif sekarang"
           >
             Dapatkan Koleksi Eksklusif Sekarang
