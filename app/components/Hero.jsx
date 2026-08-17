@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-b from-violet-spec to-white pb-20">
+    <section className="relative bg-gradient-to-b from-violet-spec to-slate-deep pb-20">
       {/* Background Wave - Optimized with aria-hidden */}
       <div className="absolute top-0 left-0 w-full hidden md:block" aria-hidden="true">
         <svg viewBox="0 0 1440 320" className="w-full" focusable="false">
