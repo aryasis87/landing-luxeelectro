@@ -5,10 +5,10 @@ import "./globals.css";
 const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"], weight: ["600", "700", "800"] });
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"LuxeElectro","description":"Elektronik premium","url":"https://luxeelectro.pintuweb.com"};
+const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"LuxeElectro","description":"Elektronik premium","url":"https://landing-luxeelectro.vercel.app"};
 
 export const metadata = {
-  metadataBase: new URL("https://luxeelectro.pintuweb.com"),
+  metadataBase: new URL("https://landing-luxeelectro.vercel.app"),
   title: "LuxeElectro — Elektronik Premium untuk Hidup Mewah",
   description: "LuxeElectro: bawa kemewahan ke kehidupan sehari-hari dengan pilihan gadget & home appliance premium terbaik.",
   applicationName: "LuxeElectro",
@@ -16,11 +16,11 @@ export const metadata = {
   authors: [{ name: "LuxeElectro" }],
   creator: "LuxeElectro",
   publisher: "LuxeElectro",
-  alternates: { canonical: "https://luxeelectro.pintuweb.com" },
+  alternates: { canonical: "https://landing-luxeelectro.vercel.app" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://luxeelectro.pintuweb.com",
+    url: "https://landing-luxeelectro.vercel.app",
     siteName: "LuxeElectro",
     title: "LuxeElectro — Elektronik Premium untuk Hidup Mewah",
     description: "LuxeElectro: bawa kemewahan ke kehidupan sehari-hari dengan pilihan gadget & home appliance premium terbaik.",
