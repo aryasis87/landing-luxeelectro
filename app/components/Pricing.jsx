@@ -1,14 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaCouch } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
 
 const pricingPlans = [
   {
     id: 1,
     name: "Basic",
     price: "Rp 199.000",
-    features: ["Desain Dasar", "Konsultasi Online", "Support via Email"],
+    features: ["Garansi tambahan 6 bulan", "Konsultasi teknis online", "Support via email"],
     buttonText: "Pilih Paket",
   },
   {
@@ -16,10 +16,10 @@ const pricingPlans = [
     name: "Pro",
     price: "Rp 499.000",
     features: [
-      "Desain Eksklusif",
-      "Konsultasi 3x/Bulan",
-      "Support Prioritas",
-      "Bonus Katalog Furnitur",
+      "Garansi tambahan 1 tahun",
+      "Servis berkala 3x setahun",
+      "Support prioritas",
+      "Bonus pembersihan perangkat",
     ],
     buttonText: "Paket Terpopuler",
     popular: true,
@@ -29,10 +29,10 @@ const pricingPlans = [
     name: "Premium",
     price: "Rp 999.000",
     features: [
-      "Desain Premium",
-      "Konsultasi 1-on-1",
-      "Rekomendasi Material",
-      "Akses Eksklusif ke Supplier",
+      "Garansi tambahan 2 tahun",
+      "Teknisi datang ke rumah",
+      "Unit pengganti selama servis",
+      "Akses awal produk baru",
     ],
     buttonText: "Gabung Sekarang",
   },
@@ -98,13 +98,13 @@ const Pricing = () => {
             className="text-3xl sm:text-4xl font-bold text-violet-spec leading-tight"
             variants={itemVariants}
           >
-            Pilih Paket Desain Furnitur Anda
+            Pilih Paket Perlindungan Perangkat
           </motion.h2>
           <motion.p
             className="mt-4 text-slate-deep text-base sm:text-lg max-w-2xl mx-auto"
             variants={itemVariants}
           >
-            Rancang ruang impian Anda dengan layanan desain furnitur eksklusif kami.
+            Lindungi gadget dan peralatan rumah Anda dengan garansi tambahan dan layanan purnajual kami.
           </motion.p>
         </motion.div>
 
@@ -157,7 +157,7 @@ const Pricing = () => {
                     variants={featureVariants}
                     transition={{ delay: i * 0.05 + 0.2 }}
                   >
-                    <FaCouch className="text-violet-spec mt-0.5 mr-2 flex-shrink-0" />
+                    <FaShieldAlt className="text-violet-spec mt-0.5 mr-2 flex-shrink-0" />
                     <span>{feature}</span>
                   </motion.li>
                 ))}

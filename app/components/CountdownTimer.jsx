@@ -77,7 +77,7 @@ export default function CountdownTimer() {
       >
         Promo Elektronik Unggul 
       </h2>
-      <p className="text-violet-spec text-sm mt-1.5">
+      <p className="text-violet-spec-2 text-sm mt-1.5">
         Persiapkan diri Anda untuk peluncuran koleksi eksklusif!
       </p>
 
@@ -104,7 +104,7 @@ export default function CountdownTimer() {
             >
               {String(value).padStart(2, '0')}
             </div>
-            <p className="text-xs mt-1.5 text-violet-spec font-medium uppercase tracking-wider">
+            <p className="text-xs mt-1.5 text-violet-spec-2 font-medium uppercase tracking-wider">
               {label}
             </p>
           </motion.div>

@@ -50,11 +50,11 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="md:hidden text-center mt-6"
         >
-          <p className="text-slate-deep text-base">
+          <p className="text-lume/85 text-base">
             Jelajahi koleksi perangkat elektronik kami dengan sentuhan ungu yang menawan.
           </p>
           <button 
-            className="mt-4 bg-violet-spec text-lume px-6 py-3 rounded-lg font-medium shadow-md hover:bg-violet-spec transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-violet-spec focus:ring-offset-2"
+            className="mt-4 bg-lume text-violet-spec-2 px-6 py-3 rounded-lg font-medium shadow-md hover:bg-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-lume focus:ring-offset-2 focus:ring-offset-violet-spec"
             aria-label="Lihat Koleksi Unggulan"
           >
             Lihat Koleksi Unggulan
@@ -71,14 +71,14 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
-            <h1 className="text-3xl lg:text-5xl font-bold text-slate-deep leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-bold text-lume leading-tight">
               Teknologi Ungu <br className="hidden lg:block" /> Untuk Hidup Lebih Mewah
             </h1>
-            <p className="text-lume-dim lg:text-lg max-w-md">
+            <p className="text-lume/80 lg:text-lg max-w-md">
               Dapatkan gadget dan home appliance pilihan dengan aksen ungu yang elegan.
             </p>
             <button 
-              className="mt-4 bg-violet-spec text-lume px-6 py-3 rounded-lg font-medium shadow-md hover:bg-violet-spec transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-violet-spec focus:ring-offset-2"
+              className="mt-4 bg-lume text-violet-spec-2 px-6 py-3 rounded-lg font-medium shadow-md hover:bg-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-lume focus:ring-offset-2 focus:ring-offset-violet-spec"
               aria-label="Jelajahi Koleksi Sekarang"
             >
               Jelajahi Sekarang

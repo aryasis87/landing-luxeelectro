@@ -68,17 +68,18 @@ const VideoSalesLetter = () => {
             <>
               {/* Thumbnail placeholder for better CLS */}
               {!isPlaying && (
-                <div 
-                  className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                <button
+                  type="button"
+                  className="absolute inset-0 flex w-full items-center justify-center cursor-pointer"
                   onClick={() => setIsPlaying(true)}
-                  aria-label="Play video"
+                  aria-label="Putar video"
                 >
                   <div className="w-16 h-16 bg-violet-spec rounded-full flex items-center justify-center">
                     <svg className="w-8 h-8 text-lume" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
                     </svg>
                   </div>
-                </div>
+                </button>
               )}
               
               {/* Lazy-loaded iframe */}
