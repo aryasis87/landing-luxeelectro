@@ -25,6 +25,10 @@ Bahasa rupa **Panel Spesifikasi**: gadget dan peralatan rumah premium ditampilka
 - Font: Manrope, Inter (next/font)
 - SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
 
+## Kredit foto
+
+Foto headphone di hero: ["Headphones Audio"](https://stocksnap.io/photo/headphones-audio-1Y69ONYCCZ) oleh Corey Blaz via StockSnap, lisensi CC0 (domain publik).
+
 ## Menjalankan secara lokal
 
 ```bash

@@ -27,8 +27,8 @@ export default function Hero() {
         >
           <div className="relative w-full aspect-video rounded-b-2xl overflow-hidden">
             <Image
-              src="/images/sofa.jpg"
-              alt="Promo Elektronik Ungu"
+              src="/images/headphones.jpg"
+              alt="Headphone premium berwarna gelap"
               width={600}
               height={400}
               className="object-cover"
@@ -94,8 +94,8 @@ export default function Hero() {
             className="relative w-full aspect-[4/3]"
           >
             <Image
-              src="/images/sofa.jpg"
-              alt="Showcase Elektronik Ungu"
+              src="/images/headphones.jpg"
+              alt="Headphone premium berwarna gelap di atas meja"
               fill
               className="object-cover rounded-xl shadow-lg"
               priority
@@ -140,8 +140,8 @@ export default function Hero() {
           >
             <div className="relative w-20 h-20 lg:w-28 lg:h-28 overflow-hidden rounded-full border-2 border-violet-spec/30 shrink-0">
               <Image
-                src="/images/sofa.jpg" // More appropriate image
-                alt="Tim Elektronik Ungu"
+                src="/images/headphones.jpg"
+                alt="Headphone premium LuxeElectro"
                 width={112}
                 height={112}
                 className="object-cover w-full h-full"
