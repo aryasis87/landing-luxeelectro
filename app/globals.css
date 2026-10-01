@@ -13,6 +13,7 @@
   --color-lume-dim: #645e78; /* teks sekunder */
   --color-violet-spec: #6a4ae0; /* ungu instrumen */
   --color-violet-spec-2: #4f34b8;
+  --color-violet-light: #b9a7ff; /* aksen teks kecil di atas grafit */
 }
 
 @layer base {

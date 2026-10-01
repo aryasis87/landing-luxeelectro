@@ -1,19 +1,19 @@
-// app/not-found.js
-import Link from 'next/link';
+import Link from "next/link";
+
+export const metadata = { title: "Halaman tidak ditemukan" };
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white text-gray-800 font-sans">
-      <div className="text-center max-w-lg px-6 py-12">
-        <h1 className="text-6xl font-extrabold mb-4 text-gray-900">404</h1>
-        <p className="text-lg mb-6 text-gray-600">Oops! The page you&apos;re looking for doesn&apos;t exist.</p>
-        <Link
-          href="/"
-          className="inline-block bg-gray-900 text-white py-3 px-8 rounded-md text-lg font-semibold hover:bg-gray-800 transition duration-300"
-        >
-          Go Back Home
-        </Link>
+    <main className="flex min-h-[80vh] items-center bg-slate-deep px-6 pt-20 text-lume">
+      <div className="mx-auto max-w-2xl">
+        <p className="spec-label text-violet-light">404 · Tidak ada sinyal</p>
+        <h1 className="mt-4 text-4xl font-extrabold text-lume md:text-5xl">Lembar spesifikasi ini tidak ada</h1>
+        <p className="mt-4 leading-relaxed text-lume/85">Alamatnya mungkin salah, atau perangkatnya sudah tidak dijual.</p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/" className="bg-violet-spec px-6 py-3.5 font-bold text-white hover:bg-violet-spec-2">Ke beranda</Link>
+          <Link href="/bandingkan" className="border border-lume/30 px-6 py-3.5 font-bold text-lume hover:border-lume">Bandingkan perangkat</Link>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
