@@ -1,6 +1,6 @@
-# LuxeElectro — Elektronik Premium untuk Hidup Mewah
+# LuxeElectro — Audio dengan Spesifikasi yang Ditulis Lengkap
 
-LuxeElectro: bawa kemewahan ke kehidupan sehari-hari dengan pilihan gadget & home appliance premium terbaik.
+LuxeElectro: headphone, earphone, DAC, dan speaker meja lini Luxe dengan lembar spesifikasi lengkap, kurva respons frekuensi, dan uji dengar 14 hari di rumah.
 
 **Demo live:** https://landing-luxeelectro.vercel.app
 
@@ -14,14 +14,15 @@ Bahasa rupa **Panel Spesifikasi**: gadget dan peralatan rumah premium ditampilka
 
 ## Halaman
 
-`/`
+- `/` — lini audio Luxe: panel spesifikasi, layanan, perlindungan, uji dengar 14 hari
+- `/produk/[slug]` — lembar spesifikasi lengkap dan kurva respons frekuensi per perangkat
+- `/bandingkan` — dua perangkat berdampingan dengan kurva ditumpuk
 
 ## Teknologi
 
 - Next.js 15.5 (App Router) dan React 19
 - Tailwind CSS v4
 - JavaScript
-- Heroicons, Framer Motion, React Icons, Swiper
 - Font: Manrope, Inter (next/font)
 - SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
 
